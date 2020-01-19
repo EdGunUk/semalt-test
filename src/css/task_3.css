@@ -1,0 +1,61 @@
+h3 {
+  font-family: arial, sans-serif;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+th {
+  position: relative;
+  user-select: none;
+}
+
+tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+
+.users-table tr:first-child {
+  background-color: #bce4cd;
+}
+
+.workers-table tr:first-child {
+  background-color: #bfd7e2;
+}
+
+.arrow {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  transition: 0.1s;
+}
+
+.arrow__item {
+  background-color: black;
+  display: block;
+  height: 2px;
+  margin: 4px 0;
+  width: 15px;
+  transition: 0.1s;
+}
+
+.arrow_top .arrow__item:last-child, .arrow_bottom .arrow__item:last-child{
+  width: 10px;
+  transform: rotate(-45deg) translate(0, -4px);
+}
+
+.arrow_top .arrow__item:first-child, .arrow_bottom .arrow__item:first-child {
+  width: 10px;
+  transform: rotate(45deg) translate(4px);
+}
+
+.arrow_bottom { 
+  transform: rotate(180deg);
+}
